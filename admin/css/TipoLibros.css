@@ -1,0 +1,41 @@
+#columna{
+	margin: 100px;
+	padding: 70;
+}
+
+#subtitulo1{
+	font-family: Helvetica;
+	text-align: center;
+	height: 40px;
+	font-size: 20px;
+	color: #000;
+}
+#subtitulo2{
+	font-family: Helvetica;
+	height: 40px;
+	font-size: 20px;
+	color:#C0392B;
+}
+
+
+form{
+	padding: 60px;
+	max-width: 400px;
+	background-color: #FAE5D3;
+	margin: 0 auto;
+}
+
+form input, form textarea{
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #525c66;
+}
+
+form button {
+	background-color: #FDEBD0;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	color: white;
+}

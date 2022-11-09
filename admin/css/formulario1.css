@@ -1,0 +1,30 @@
+#columna{
+	margin-top: 100px;
+	padding: 70px;
+}
+#subtitulo1{
+	font-family: Helvetica;
+	text-align: center;
+	height: 40px;
+	font-size:20px;
+	color: #000;
+}
+form{
+	padding: 40px;
+	max-width: 400px;
+	background-color: #e7e7e7;
+	margin: 0 auto;
+}
+form input, form textarea{
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #525c66;
+}
+form button{
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	color: white;
+}

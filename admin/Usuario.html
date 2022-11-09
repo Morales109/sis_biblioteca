@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema Biblioteca-Keyla Morales</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/Usuario.css">
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+	<script type="text/javascript" src="js/valUsuario.js"></script>
+	<style>#heading { color: #C0392B ; }</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="menu">
+				<!-- para que vuelva a Inicio general el enlace debe ser "href="../nombre">-->
+				<li><a href="../index.html">Inicio</a></li>
+				<li>
+					<a href="#">Administrativo</a>
+					<ul>
+						
+						<li><a href="Biblioteca.html">Biblioteca</a></li>
+						<li><a href="Bibliotecario.html">Bibliotecario</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Académico</a>
+					<ul>
+						<li><a href="#">Usuario</a></li>
+						<li><a href="Libros.html">Libros</a></li>
+						<li><a href="PrestamoLibro.html">Prestamo de Libros</a></li>
+						<li><a href="Reserva.html">Reserva de Libros</a></li>
+						<li><a href="Tipo_Libros.html">Tipo de Libro</a></li>
+						<li><a href="detalle_Reserva.html">Detalle Reserva</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+		<div id="subtitulo1">Usuario</div>
+		<form name="formu" action="usuario.php" method="post"> 
+			<!--NOMBRES:<select name="nombres">
+				<option value="">--Seleccionar--</option>
+				<option value="Keyla">Keyla</option>
+				<option value="Luis">Luis</option>
+				<option value="Fabiola">Fabiola</option>
+			</select><p><p><br>
+			APELLIDOS:<select name="apellidos">
+				<option value="">--Seleccionar--</option>
+				<option value="Morales">Morales</option>
+				<option value="Montellano">Montellano</option>
+				<option value="Argota">Argota</option>
+			</select><p><p><br>
+			EL CAMBIO DE SELECT-->
+			<input type="text" name="nombres" placeholder="Nombres del Estudiante*" onkeyup="this.value=this.value.toUpperCase()" class="otro" >
+			<input type="text" name="apellidos" placeholder="Apellidos del estudiante*" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="celular" placeholder="Celular" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="direccion" placeholder="Direccion*" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="cedula" maxlength="19" size="10" placeholder="Cedula de Identidad*">
+			<p>
+			Correo Electronico <br><input type="url" name="e_mail" size="25" placeholder="Ejm: keylamorales888@gmail.com" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			</p>
+			<input type="hidden" name="formulario" value="Usuario">
+			<input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar()">
+			<input type="reset" name="boton2" value="BORRAR" class="boton">
+			Datos Obligatorios<h4 id="heading">*</h4>
+		</form>
+
+
+</body>
+</html>

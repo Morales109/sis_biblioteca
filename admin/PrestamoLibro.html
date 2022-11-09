@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema Biblioteca-Keyla Morales</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/PrestamoLibros.css">
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+	<script type="text/javascript" src="js/valPrestlibros.js"></script>
+	<!---INICIO CALENDARIO----->
+		<link rel="stylesheet" type="text/css" href="calendario/tcal.css">
+		<script type="text/javascript" src="calendario/tcal.js"></script>
+	<!--FIN CALENDARIO----->
+	<style>#heading { color: #C0392B ; }</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>
+					<a href="#">Administrativo</a>
+					<ul>
+					
+						<li><a href="Biblioteca.html">Biblioteca</a></li>
+						<li><a href="Bibliotecario.html">Bibliotecario</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Académico</a>
+					<ul>
+						<li><a href="Usuario.html">Usuario</a></li>
+						<li><a href="Libros.html">Libros</a></li>
+						<li><a href="#">Prestamo de Libros</a></li>
+						<li><a href="Reserva.html">Reserva de Libros</a></li>
+						<li><a href="Tipo_Libros.html">Tipo de Libro</a></li>
+						<li><a href="detalle_Reserva.html">Detalle Reserva</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	
+		<div id="subtitulo1">Prestamo de Libro</div>
+		<form name="formu" action="PrestamoLibro.php" method="post"> 
+			<input type="number" name="num_libros" placeholder="Numero de libros prestados *" min="0" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="fecha_inicial" placeholder="FECHA INICIAL" class="tcal" >
+			<input type="text" name="fecha_final" placeholder="FECHA FINAL" class="tcal" >
+			<input type="text" name="fecha_entrega" placeholder="FECHA DE ENTREGA" class="tcal" >
+			
+			</p>
+			<!--<br>
+			<input type="text" name="observacion" placeholder="Observacion">-->
+			<p>
+			Observación <br> <textarea name="observacion" rows="5" cols="20" ></textarea>
+			</p>
+			<input type="hidden" name="formulario" value="Prestamo Libro">
+			<input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar()">
+			<input type="reset" name="boton2" value="BORRAR" class="boton">
+		<h4 id="heading">*</h4>Datos Obligatorios
+			<!--<button type="submit" name="enviar"> ENVIAR</button>--REEMPLAZADO-->
+			
+		</form>
+	
+
+</body>
+</html>

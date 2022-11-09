@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema Biblioteca-Keyla Morales</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/Usuario.css">
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+	<script type="text/javascript" src="js/valBiblioteca.js"></script>
+	<style>#heading { color: #C0392B ; }</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>
+					<a href="#">Administrativo</a>
+					<ul>
+						
+						<li><a href="#">Biblioteca</a></li>
+						<li><a href="Bibliotecario.html">Bibliotecario</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Académico</a>
+					<ul>
+						<li><a href="Usuario.html">Usuario</a></li>
+						<li><a href="Libros.html">Libros</a></li>
+						<li><a href="PrestamoLibro.html">Prestamo de Libros</a></li>
+						<li><a href="Reserva.html">Reserva de Libros</a></li>
+						<li><a href="Tipo_Libros.html">Tipo de Libro</a></li>
+						<li><a href="detalle_Reserva.html">Detalle Reserva</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	
+		<div id="subtitulo1">Biblioteca</div>
+		<form name="formu" action="sistema_biblioteca.php" method="post"> 
+			
+			<input type="text" name="nombre_biblioteca" placeholder="Nombre (*)" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+
+			<input type="text" name="ubicacion_biblioteca" placeholder="Ubicacion de la Biblioteca" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="telefono" placeholder="Telefono (*)" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<p>
+			Correo Electronico<h4 id="heading">*</h4><input type="url" name="correo" size="25" placeholder="Ejm: @gmail.com" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			</p>
+			<p> logo:  <input type="file" name="subir_documento"></p>
+			<input type="hidden" name="formulario" value="Sistema biblioteca">	
+			<input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar();"> 
+			<input type="reset" name="boton2" value="BORRAR" class="boton">
+			Datos Obligatorios <h4 id="heading">*</h4>
+		</form>
+	
+
+</body>
+</html>

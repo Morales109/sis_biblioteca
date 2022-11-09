@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema Biblioteca-Keyla Morales</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/detalle_Reserva.css">
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+	<script type="text/javascript" src="js/detalle_Reserva.js"></script>
+	<!---INICIO CALENDARIO----->
+		<link rel="stylesheet" type="text/css" href="calendario/tcal.css">
+		<script type="text/javascript" src="calendario/tcal.js"></script>
+	<!--FIN CALENDARIO----->
+	<style>#heading { color: #C0392B ; }</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>
+					<a href="#">Administración</a>
+					<ul>
+					
+						<li><a href="Biblioteca.html">Biblioteca</a></li>
+						<li><a href="Bibliotecario.html">Bibliotecario</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Académico</a>
+					<ul>
+						<li><a href="Usuario.html">Usuario</a></li>
+						<li><a href="Libros.html">Libros</a></li>
+						<li><a href="PrestamoLibro.html">Prestamo de Libros</a></li>
+						<li><a href="Reserva.html">Reserva de Libros</a></li>
+						<li><a href="Tipo_Libros.html">Tipo de Libro</a></li>
+						<li><a href="#">Detalle Reserva</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+		<div id="subtitulo1">Reserva de libro</div>
+		<form name="formu" action="detalle_Reserva.php" method="post"> 
+			<!--Numero de Inventario <input type="text" name="num_inventario" placeholder="Ejm: 0158NM" title="Ejm: 0158NM" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="ci_usuario" maxlength="19" size="10" placeholder="Cedula del usuario *">
+			<p>
+			Apellido Bibliotecario:<select name="ape_bibliotecario">
+				<option value="">--Seleccionar--</option>
+				<option value="Lopez">Lopez</option>
+				<option value="Montellano">Montellano</option>
+				<option value="Solano">Solano</option>
+			</select><p><p><br>
+			<input type="text" name="fecha" placeholder="FECHA DE RESERVA" class="tcal">
+			<br>
+			<input type="text" name="descripcion" placeholder="Descripcion" onkeyup="this.value=this.value.toUpperCase()" class="otro">-->
+			<input type="number" name="num_reservados" placeholder="Numero de ejemplares Reservados *" min="0" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			
+			
+			<input type="hidden" name="formulario" value="Detalle de Reserva">
+			<input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar()">
+			<input type="reset" name="boton2" value="BORRAR" class="boton">
+		Datos Obligatorios <h4 id="heading">*</h4>
+		</form>
+	
+
+</body>
+</html>

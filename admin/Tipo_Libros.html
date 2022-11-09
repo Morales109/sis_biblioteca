@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Sistema Biblioteca-Keyla Morales</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/TipoLibros.css">
+	<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+	<script type="text/javascript" src="js/valTipoLibro.js"></script>
+	<style>#heading { color: #C0392B ; }</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>
+					<a href="#">Administración</a>
+					<ul>
+					
+						<li><a href="Biblioteca.html">Biblioteca</a></li>
+						<li><a href="Bibliotecario.html">Bibliotecario</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Académico</a>
+					<ul>
+						<li><a href="Usuario.html">Usuario</a></li>
+						<li><a href="Libros.html">Libros</a></li>
+						<li><a href="PrestamoLibro.html">Prestamo de Libros</a></li>
+						<li><a href="Reserva.html">Reserva de Libros</a></li>
+						<li><a href="#">Tipo de Libro</a></li>
+						<li><a href="detalle_Reserva.html">Detalle Reserva</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+		<div id="subtitulo1">Tipo de Libro</div>
+		<form name="formu" action="TipoLibro.php" method="post"> 
+
+			<h4 id=heading>*</h4>TIPO DE LIBRO:<select name="tipo_libro">
+				<option value="">--Seleccionar--</option>
+				<option value="articulo">Articulo</option>
+				<option value="tesis">Tesis</option>
+				<option value="Monografía">Monografia</option>
+				<option value="libro">Libro</option>
+				<option value="folleto">folleto</option>
+			</select><p><p><br>
+			<!--<input type="text" name="autor" placeholder="Autor" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="editorial" placeholder="Editorial" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="direccion" placeholder="direccion del libro" onkeyup="this.value=this.value.toUpperCase()" class="otro">
+			<input type="text" name="observacion" placeholder="Observacion" onkeyup="this.value=this.value.toUpperCase()" class="otro">-->
+			<input type="hidden" name="formulario" value="Tipo de Libro">
+			<input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar()">
+			<input type="reset" name="boton2" value="BORRAR" class="boton">
+		Datos Obligatorios <h4 id=heading>*</h4>
+		</form>
+	
+
+</body>
+</html>
